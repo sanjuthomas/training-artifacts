@@ -1,3 +1,4 @@
 https://www.linkedin.com/in/valliappalakshmanan/
 https://aisoftwarellc.weebly.com/
 https://www.coursera.org/learn/gcp-big-data-ml-fundamentals/lecture/6u5GF/fast-random-access
+https://www.coursera.org/learn/gcp-big-data-ml-fundamentals/lecture/3XwoR/warehouse-and-interactively-query-petabytes
