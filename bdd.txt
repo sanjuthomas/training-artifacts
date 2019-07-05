@@ -1,3 +1,24 @@
 https://www.ontestautomation.com/selecting-response-elements-with-gpath-in-rest-assured/
 https://accenture.github.io/bdd-for-all/GPATH.html
 https://github.com/Accenture/bdd-for-all
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GPATH - payload.data.abc.findAll {  abc -> abc.code == 'ABC'  }.test[0].key.value
