@@ -23,3 +23,7 @@ https://github.com/Accenture/bdd-for-all
 
 GPATH - payload.data.abc.findAll {  abc -> abc.code == 'ABC'  }.test[0].key.value
 http://olyv-qa.blogspot.com/2017/07/restassured-short-example.html
+
+
+ Pattern.compile("#\\{(.*?)\\}");  //#{id}
+ Pattern.compile("#\\{(.*?):(.*?)\\}"); //#{id:Integer}
