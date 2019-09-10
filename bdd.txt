@@ -27,3 +27,9 @@ http://olyv-qa.blogspot.com/2017/07/restassured-short-example.html
 
  Pattern.compile("#\\{(.*?)\\}");  //#{id}
  Pattern.compile("#\\{(.*?):(.*?)\\}"); //#{id:Integer}
+ 
+ find { it.name == 'sanju'}.id                        |  100  |
+ elements.find { element -> element.find { g -> g.id == 'A'}}.find { g -> g.id == 'B'}.code   | B  |
+ elements.find { element -> element.id == 'A'}.anotherElement.findAll {  element -> group.id == 'B'  }[0].name                | C   |
+ 
+ 
