@@ -3,6 +3,8 @@ https://accenture.github.io/bdd-for-all/GPATH.html
 https://github.com/Accenture/bdd-for-all
 
 
+https://stackoverflow.com/questions/52122487/nested-iteration-over-json-using-groovy-closure-in-rest-assured
+
 
 
 
