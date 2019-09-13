@@ -5,6 +5,7 @@ https://github.com/Accenture/bdd-for-all
 
 https://stackoverflow.com/questions/52122487/nested-iteration-over-json-using-groovy-closure-in-rest-assured
 
+https://goessner.net/articles/JsonPath/
 
 
 
