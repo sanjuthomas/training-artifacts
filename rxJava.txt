@@ -1,1 +1,3 @@
 https://developer.couchbase.com/documentation/server/3.x/developer/java-2.0/observables.html
+
+http://tomstechnicalblog.blogspot.com/2015/11/rxjava-achieving-parallelization.html
