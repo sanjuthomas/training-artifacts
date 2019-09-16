@@ -1,3 +1,26 @@
 https://developer.couchbase.com/documentation/server/3.x/developer/java-2.0/observables.html
 
 http://tomstechnicalblog.blogspot.com/2015/11/rxjava-achieving-parallelization.html
+
+
+package org.sanju;
+
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.schedulers.Schedulers;
+
+public class ParallelTransformation {
+    public static void main(String[] args) throws InterruptedException {
+        Observable<Integer> vals = Observable.range(1,10000);
+        vals.flatMap(val -> Observable.just(val)
+                .subscribeOn(Schedulers.computation())
+                .map(i -> intenseCalculation(i))
+        ).buffer(100).subscribe(val -> System.out.println(val));
+        Thread.sleep(10000);
+    }
+
+    private static int intenseCalculation(Integer i) throws InterruptedException {
+        System.out.println("Calculating " + i + " on " + Thread.currentThread().getName());
+        Thread.sleep(100);
+        return i *i;
+    }
+}
