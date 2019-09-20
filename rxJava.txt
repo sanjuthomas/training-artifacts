@@ -24,3 +24,74 @@ public class ParallelTransformation {
         return i *i;
     }
 }
+
+
+----------------
+
+package org.sanju;
+
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.functions.Consumer;
+import io.reactivex.rxjava3.functions.Function;
+import io.reactivex.rxjava3.schedulers.Schedulers;
+
+import java.util.List;
+
+public class ParallelTransformation {
+
+    public static void main(String[] args) throws InterruptedException {
+        Writer writer = new Writer();
+        Calculator calculator = new Calculator();
+        Observable<Integer> observable = Observable.range(1,1000);
+        observable.flatMap(val -> Observable.just(val)
+                .subscribeOn(Schedulers.computation())
+                .map(calculator)
+        ).buffer(100).subscribe(writer);
+
+        observable.doOnError( e -> {
+            System.out.println("Error occurred!");
+        });
+    }
+
+    private static Row intenseCalculation(Integer i) throws InterruptedException {
+        Thread.sleep(10);
+        return new Row(i);
+    }
+}
+
+class Calculator implements Function<Integer, Row> {
+    @Override
+    public Row apply(Integer i) throws Throwable {
+        Thread.sleep(10);
+        return new Row(i);
+    }
+}
+
+interface IWriter {
+    void write();
+}
+
+class Row {
+    int i;
+    public Row(int i) {
+        this.i = i;
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(i);
+    }
+}
+
+class Writer implements IWriter, Consumer<List<Row>> {
+
+    @Override
+    public void accept(List<Row> rows) throws Throwable {
+        System.out.println(rows);
+    }
+
+    @Override
+    public void write() {
+
+    }
+}
