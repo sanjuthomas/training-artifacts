@@ -3,6 +3,7 @@ https://developer.couchbase.com/documentation/server/3.x/developer/java-2.0/obse
 http://tomstechnicalblog.blogspot.com/2015/11/rxjava-achieving-parallelization.html
 
 https://www.baeldung.com/jax-rs-reactive-client
+https://docs.huihoo.com/jersey/2.24/rx-client.html
 
 
 package org.sanju;
