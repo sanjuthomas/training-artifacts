@@ -4,6 +4,7 @@ http://tomstechnicalblog.blogspot.com/2015/11/rxjava-achieving-parallelization.h
 
 https://www.baeldung.com/jax-rs-reactive-client
 https://docs.huihoo.com/jersey/2.24/rx-client.html
+https://github.com/eugenp/tutorials/blob/97a0cbbdc714e795237a94388fec6b6020342472/spring-jersey/src/test/java/com/baeldung/clientrx/ClientOrchestrationIntegrationTest.java
 
 
 package org.sanju;
