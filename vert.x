@@ -3,3 +3,4 @@ https://stackoverflow.com/questions/34940693/vert-x-use-more-than-one-handler
 https://github.com/zyclonite/nassh-relay/blob/master/src/main/java/net/zyclonite/nassh/handler/CookiePostHandler.java
 https://docs.microsoft.com/en-us/stream-analytics-query/tumbling-window-azure-stream-analytics
 https://cloud.spring.io/spring-cloud-netflix/multi/multi__circuit_breaker_hystrix_clients.html
+https://balamaci.ro/reactive-log-processing/
