@@ -4,3 +4,4 @@ https://github.com/zyclonite/nassh-relay/blob/master/src/main/java/net/zyclonite
 https://docs.microsoft.com/en-us/stream-analytics-query/tumbling-window-azure-stream-analytics
 https://cloud.spring.io/spring-cloud-netflix/multi/multi__circuit_breaker_hystrix_clients.html
 https://balamaci.ro/reactive-log-processing/
+https://github.com/ReactiveX/RxJava/issues/5032
