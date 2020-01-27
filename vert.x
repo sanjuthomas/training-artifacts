@@ -5,3 +5,5 @@ https://docs.microsoft.com/en-us/stream-analytics-query/tumbling-window-azure-st
 https://cloud.spring.io/spring-cloud-netflix/multi/multi__circuit_breaker_hystrix_clients.html
 https://balamaci.ro/reactive-log-processing/
 https://github.com/ReactiveX/RxJava/issues/5032
+
+https://cache2k.org/
