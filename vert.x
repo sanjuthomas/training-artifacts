@@ -8,3 +8,4 @@ https://github.com/ReactiveX/RxJava/issues/5032
 
 https://cache2k.org/
 https://cache2k.org/docs/latest/user-guide.html#spring
+https://cruftex.net/2017/09/01/Java-Caching-Benchmarks-Part-3.html
