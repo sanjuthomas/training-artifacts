@@ -7,3 +7,4 @@ https://balamaci.ro/reactive-log-processing/
 https://github.com/ReactiveX/RxJava/issues/5032
 
 https://cache2k.org/
+https://cache2k.org/docs/latest/user-guide.html#spring
