@@ -1,1 +1,6 @@
 https://stackoverflow.com/questions/32317112/spring-cloud-config-server-set-directory-of-folder-where-git-repo-are-cloned
+
+
+There are two kinds of label one is default in the config server and label in the appliation. 
+
+read - https://stackoverflow.com/questions/34195002/how-to-ask-spring-cloud-config-server-to-checkout-configuration-from-specific-br
