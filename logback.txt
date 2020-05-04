@@ -2,3 +2,6 @@ http://logback.10977.n7.nabble.com/Adding-a-timestamp-to-a-FileAppender-file-td1
 
 
 https://stackify.com/logging-logback/
+
+
+https://stackoverflow.com/questions/38527175/spring-boot-no-log-file-written-logging-file-is-not-respected
