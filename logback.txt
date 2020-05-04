@@ -5,3 +5,6 @@ https://stackify.com/logging-logback/
 
 
 https://stackoverflow.com/questions/38527175/spring-boot-no-log-file-written-logging-file-is-not-respected
+
+
+spring.cloud.config.server.git.refreshRate
