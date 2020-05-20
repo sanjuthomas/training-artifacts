@@ -1,0 +1,36 @@
+{
+  "processes": [
+    {
+      "id": "Parent Process Id1",
+      "name": "Parent Process Name1",
+      "workItemType": "rootWorkItemType",
+      "tasks": [
+        {
+          "id" : "processId1",
+          "name": "processName1",
+          "workItemTypes" : ["type1", "type2"]
+        },
+        {
+          "id" : "processId2",
+          "name": "processName2",
+          "workItemTypes" : ["type1", "type2"]
+        }
+      ],
+      "extAttr" : [1,2,3]
+    },
+    
+    {
+      "id": "Parent Process Id2",
+      "name": "Parent Process Name2",
+      "workItemType": "rootWorkItemType",
+      "tasks": [
+        {
+          "id" : "processId",
+          "name": "processName",
+          "workItemTypes" : ["type1", "type2"]
+        }
+      ],
+      "extAttr" : [1,2,3]
+    }
+  ]
+}
