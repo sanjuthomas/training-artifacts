@@ -2,3 +2,6 @@ https://github.com/BrechtDeMan/WebAudioEvaluationTool/wiki
 
 
 https://github.com/eugenp/tutorials/blob/2b581cb3f6dcc0a31653b31bfbf1091bb001ce9c/persistence-modules/spring-data-mongodb/src/main/java/com/baeldung/config/MongoConfig.java
+
+
+https://springframework.guru/spring-data-mongodb-with-reactive-mongodb/
