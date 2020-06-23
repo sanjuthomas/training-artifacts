@@ -5,3 +5,6 @@ https://github.com/eugenp/tutorials/blob/2b581cb3f6dcc0a31653b31bfbf1091bb001ce9
 
 
 https://springframework.guru/spring-data-mongodb-with-reactive-mongodb/
+
+
+https://stackoverflow.com/questions/35611449/mongodb-how-update-element-in-array-using-spring-query-update
