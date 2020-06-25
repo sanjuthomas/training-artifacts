@@ -11,3 +11,5 @@ https://stackoverflow.com/questions/35611449/mongodb-how-update-element-in-array
 
 
 https://stackoverflow.com/questions/49906270/how-to-apply-update-using-filtered-positional-operator-with-arrayfilters
+
+https://stackoverflow.com/questions/51225487/how-to-use-updateoption-with-arrayfilters-in-spring-data-mongodb
