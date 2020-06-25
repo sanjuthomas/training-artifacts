@@ -8,3 +8,6 @@ https://springframework.guru/spring-data-mongodb-with-reactive-mongodb/
 
 
 https://stackoverflow.com/questions/35611449/mongodb-how-update-element-in-array-using-spring-query-update
+
+
+https://stackoverflow.com/questions/49906270/how-to-apply-update-using-filtered-positional-operator-with-arrayfilters
