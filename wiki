@@ -16,3 +16,7 @@ https://stackoverflow.com/questions/51225487/how-to-use-updateoption-with-arrayf
 
 
 https://stackoverflow.com/questions/15426232/dont-return-property-when-its-an-empty-list-with-jackson
+
+
+
+http://mongodb.github.io/mongo-java-driver/3.6/driver/tutorials/change-streams/
