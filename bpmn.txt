@@ -1,0 +1,57 @@
+I want the following rough scenario outlined in a BPMN file. should be easy enough! i tried ot mark external service interactions and timers as well... let me know!!
+
+Initial Scenario
+=========
+
+Elderly woman with limited mobility and slow mental capacity has device.
+
+
+Assumption: Meeting was previously scheduled in some way.
+---service call to backend calender system we create to process at iunterval
+
+1 hour before device gets text that there is appointment coming up, Y to confirm.
+
+---send text via communication web service we create to twillio
+
+--capture user response via Twillio and mark the appointment..no need ot follow up
+
+UI has big buttons and always goes to message directly..accessibility options if needed for audio or biggest font.
+
+
+
+If device battery is low then reminder to plug in device some before appointment. Keep following up after X minutes if not plugged in.
+
+--check MDM web service ot get battery level of users device, if <30% send the above message
+
+If not confirmed appointment in 15 minutes send text was sent before, then phone call with similar messaging.
+
+---call communication web service to sent SMS wia twillio
+
+15 minutes before another confirmation to get ready.
+
+If Dr. is late then another message stating Dr. will be 15 minutes late. Y to confirm.
+--Dr has system/task in scheduling system where he indicated he is going to be late. Event passed to thie workflow to send SMS
+
+At appointment time a text with a link to video session or a big button ondevice to participate.
+--call Zoom SDK to initiate one to one conference and get link. user clicks on link
+
+
+Phone call can be opted in at this time to have phone call and will call patient and bridge with the video seamlessly.
+--call Twilio SDK to bridge call to the zoom meeting and call the user/patient
+
+All audio is transcribed and recorded
+
+All transcriptions stored in secure document and messaging layer for patient and permissions for viewing accordingly..
+--transcription service otterAI is polled ot get transcription completed event and transcription is placed in document repository. External HIPPA/document system system
+
+
+Nice to have? SOAP template for actions/care plan created and distributed to all people in contact list.. Permissioned accordingly for HIPPA.
+-- Transcription sent to our SOAP mapping service to indicate in comments of action plan template
+
+--Doctor completes task of looking at transcription and filling in completed SOAP.
+
+--doctor enters reminders of medicine into our scheduling web service..
+
+Reminders of after care tasks/ medicine pickup and address/delivery status/ when to take for adherence, etc..?
+
+-our scheduling service sends reminders to folks accordingly
