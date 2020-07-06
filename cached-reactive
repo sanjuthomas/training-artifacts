@@ -1,0 +1,31 @@
+import java.util.concurrent.atomic.AtomicReference;
+import reactor.cache.CacheMono;
+import reactor.core.publisher.Mono;
+import reactor.core.publisher.Signal;
+import reactor.util.context.Context;
+
+public class CachedDataProvider {
+
+  private final AtomicReference<Context> storeRef = new AtomicReference<>(Context.empty());
+
+  private final DataProvider provider;
+  public CachedDataProvider(DataProvider provider) {
+    this.provider = provider;
+  }
+
+  public Mono<String> dataBabyData(String key) {
+    return CacheMono
+      .lookup(k -> Mono.justOrEmpty(storeRef.get().<String>getOrEmpty(k)).map(Signal::next), key)
+      .onCacheMissResume(provider.dataBabyData())
+      .andWriteWith((k, sig) -> Mono.fromRunnable(() ->
+        storeRef.updateAndGet(ctx -> ctx.put(k, sig.get()))));
+  }
+
+}
+
+
+<dependency>
+      <groupId>io.projectreactor.addons</groupId>
+      <artifactId>reactor-extra</artifactId>
+      <version>3.3.3.RELEASE</version>
+    </dependency>
