@@ -33,3 +33,6 @@ https://lucasgauk.com/Change-Streams-and-Reactive-Spring/
 https://stackoverflow.com/questions/35848688/whats-the-difference-between-replaceone-and-updateone-in-mongodb
 
 https://github.com/seanrife/statcheck-web/issues/2
+
+
+https://nirajsonawane.github.io/2019/02/22/Update-Configs-Dynamically-Using-Spring-Cloud-Bus-and-Spring-Cloud-Config/#lg=1&slide=1
