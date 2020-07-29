@@ -38,3 +38,6 @@ https://github.com/seanrife/statcheck-web/issues/2
 https://nirajsonawane.github.io/2019/02/22/Update-Configs-Dynamically-Using-Spring-Cloud-Bus-and-Spring-Cloud-Config/#lg=1&slide=1
 
 https://github.com/reactor/reactor-netty/issues/907
+
+
+-Dreactor.netty.tcp.sslHandshakeTimeout
