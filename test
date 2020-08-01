@@ -1,36 +1,45 @@
-{
-  "processes": [
-    {
-      "id": "Parent Process Id1",
-      "name": "Parent Process Name1",
-      "workItemType": "rootWorkItemType",
-      "tasks": [
-        {
-          "id" : "processId1",
-          "name": "processName1",
-          "workItemTypes" : ["type1", "type2"]
-        },
-        {
-          "id" : "processId2",
-          "name": "processName2",
-          "workItemTypes" : ["type1", "type2"]
-        }
-      ],
-      "extAttr" : [1,2,3]
-    },
-    
-    {
-      "id": "Parent Process Id2",
-      "name": "Parent Process Name2",
-      "workItemType": "rootWorkItemType",
-      "tasks": [
-        {
-          "id" : "processId",
-          "name": "processName",
-          "workItemTypes" : ["type1", "type2"]
-        }
-      ],
-      "extAttr" : [1,2,3]
-    }
-  ]
+package com.sanjuthomas;
+
+import io.reactivex.rxjava3.annotations.NonNull;
+import io.reactivex.rxjava3.core.BackpressureStrategy;
+import io.reactivex.rxjava3.core.Flowable;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.subjects.PublishSubject;
+import io.reactivex.rxjava3.subjects.Subject;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+public class SubjectWithBackPressureTest {
+
+
+  public static void main(String[] args) throws InterruptedException {
+
+    @NonNull Subject<Object> subject = PublishSubject.create().toSerialized();
+    @NonNull Flowable<Object> out = subject.toFlowable(BackpressureStrategy.BUFFER);
+
+    // observer1 will receive all onNext and onCompleted events
+    out.subscribe(r -> System.out.println(r));
+    subject.onNext(List.of(1, 2, 3));
+    subject.onNext(List.of(4, 5, 6));
+    // observer2 will only receive "three" and onCompleted
+    out.subscribe(r -> System.out.println(r));
+    subject.onNext(List.of(7, 8, 9));
+    subject.onNext(List.of(10, 11, 12));
+
+   // subject.onComplete();
+
+    Flowable.just(1,2,3)
+      .zipWith(Flowable.interval(1, TimeUnit.SECONDS), (item, interval) -> item)
+      .subscribe(r -> System.out.println(r));
+
+
+  }
+
+
+
+
+
+  static void toConsole(Observable<Integer> sequence) {
+    sequence.subscribe(r -> System.out.println(r));
+  }
 }
