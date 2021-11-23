@@ -43,3 +43,5 @@ https://github.com/reactor/reactor-netty/issues/907
 -Dreactor.netty.tcp.sslHandshakeTimeout
 
 System.setProperty(“reactor.netty.ioWorkerCount”, “100”);
+
+https://gitenterprise.me/2016/03/30/how-to-migrate-a-git-repository/
