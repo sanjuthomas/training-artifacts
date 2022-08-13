@@ -70,3 +70,5 @@ https://www.youtube.com/watch?v=hiKPPy584Mg
 https://pbs.twimg.com/media/FW4r05dUsAAcNyS?format=jpg&name=900x900
 
 2545 US-1, North Brunswick Township, NJ 08902 
+
+https://aws.plainenglish.io/how-to-create-an-aws-application-load-balancer-for-your-ec2-instances-61d2211c9ac4
