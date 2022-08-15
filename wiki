@@ -75,3 +75,7 @@ https://pbs.twimg.com/media/FW4r05dUsAAcNyS?format=jpg&name=900x900
 https://aws.plainenglish.io/how-to-create-an-aws-application-load-balancer-for-your-ec2-instances-61d2211c9ac4
 
 https://aws.amazon.com/blogs/networking-and-content-delivery/application-load-balancer-type-target-group-for-network-load-balancer/
+
+https://www.youtube.com/watch?v=wgzuLEdHcO0
+
+
