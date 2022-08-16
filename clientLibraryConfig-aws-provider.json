@@ -11,3 +11,6 @@
     "regional_cred_verification_url": "https://sts.{region}.amazonaws.com?Action=GetCallerIdentity&Version=2011-06-15"
   }
 }
+
+GOOGLE_APPLICATION_CREDENTIALS
+GOOGLE_CLOUD_PROJECT
