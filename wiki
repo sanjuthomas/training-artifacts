@@ -79,3 +79,5 @@ https://aws.amazon.com/blogs/networking-and-content-delivery/application-load-ba
 https://www.youtube.com/watch?v=wgzuLEdHcO0
 
 https://www.youtube.com/watch?v=Eh0mJwFo9Ak
+
+https://docs.aws.amazon.com/kinesis/latest/APIReference/API_SequenceNumberRange.html
