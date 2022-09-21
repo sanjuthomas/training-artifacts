@@ -1,0 +1,8 @@
+AWS Infra Logs to GCP BigQuery
+------------------------------
+
+1. VPC Flow Log -> Cloud Watch -> Kinesis -> Lambda -> WIF -> GCP -> BigQuery
+2. VPC Flow Log -> Cloud Watch -> Kinesis -> Consumer -> WIF -> GCP -> BigQuery - this would need Dynamo DB to store check point/offset
+3. VPC Flow Log -> S3 -> Lambda -> WIF -> GCP -> BigQuery - This would need a SQS Dead Letter Queue
+4. SQL Queue -> Lambda -> WIF -> GCP -> BigQuery
+
