@@ -81,3 +81,5 @@ https://www.youtube.com/watch?v=wgzuLEdHcO0
 https://www.youtube.com/watch?v=Eh0mJwFo9Ak
 
 https://docs.aws.amazon.com/kinesis/latest/APIReference/API_SequenceNumberRange.html
+
+https://www.youtube.com/watch?v=5GpOfwbFRcs
