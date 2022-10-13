@@ -83,3 +83,5 @@ https://www.youtube.com/watch?v=Eh0mJwFo9Ak
 https://docs.aws.amazon.com/kinesis/latest/APIReference/API_SequenceNumberRange.html
 
 https://www.youtube.com/watch?v=5GpOfwbFRcs
+
+https://cloud.google.com/bigquery/docs/write-api-streaming#at-least-once
