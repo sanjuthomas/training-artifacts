@@ -85,3 +85,5 @@ https://docs.aws.amazon.com/kinesis/latest/APIReference/API_SequenceNumberRange.
 https://www.youtube.com/watch?v=5GpOfwbFRcs
 
 https://cloud.google.com/bigquery/docs/write-api-streaming#at-least-once
+
+WAC2290091932
