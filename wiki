@@ -87,3 +87,5 @@ https://www.youtube.com/watch?v=5GpOfwbFRcs
 https://cloud.google.com/bigquery/docs/write-api-streaming#at-least-once
 
 https://codahale.com/codeconf-2011-04-09-metrics-metrics-everywhere.pdf
+
+https://www.youtube.com/watch?v=2doSoMN2xvI
