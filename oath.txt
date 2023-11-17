@@ -1,0 +1,8 @@
+https://accounts.google.com/o/oauth2/v2/auth?
+access_type=offline&
+include_granted_scopes=true&
+response_type=code&
+client_id={your client id}&
+scope=https://www.googleapis.com/auth/bigquery&
+state=1111&
+redirect_uri=http://localhost:8080/auth/code"
