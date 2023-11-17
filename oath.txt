@@ -6,3 +6,6 @@ client_id={your client id}&
 scope=https://www.googleapis.com/auth/bigquery&
 state=1111&
 redirect_uri=http://localhost:8080/auth/code"
+
+
+curl -X GET -H "Authorization: Bearer token" "url"
