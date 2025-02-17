@@ -95,3 +95,5 @@ https://www.bloomberg.com/opinion/features/2024-04-07/india-elections-progressiv
 https://github.com/Java-Techie-jt/aws-lambda
 
 https://www.springcloud.io/post/2021-12/writing-into-dynamodb-in-a-spring-boot-app-using-aws-lambda/#gsc.tab=0
+
+https://github.com/StyraInc/opa-java-wasm
