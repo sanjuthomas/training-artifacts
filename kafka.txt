@@ -1,1 +1,2 @@
 https://www.confluent.io/kafka-summit-ny19/data-transformations-using-kafka-streams
+https://www.confluent.io/blog/5-things-every-kafka-developer-should-know/#tip-2-new-sticky-partitioner
