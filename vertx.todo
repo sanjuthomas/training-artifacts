@@ -1,0 +1,36 @@
+@Todo
+validation for required elements
+copyright for all new manually created files
+java doc
+manual - look at the example package - 1. what is DCR? use cases, and examples - you can use images. (image::sunset.jpg[])
+https://docs.asciidoctor.org/asciidoc/latest/macros/images/
+
+Integration Test Cases
+
+
+https://code.visualstudio.com/
+Ubuntu Server - https://ubuntu.com/download/server
+https://code.visualstudio.com/docs/remote/tunnels
+vscode.dev
+
+Paulo Lopes
+7:20 AM
+https://github.com/eclipse-vertx/vertx-auth/blob/master/vertx-auth-common/src/main/java/io/vertx/ext/auth/authentication/UsernamePasswordCredentials.java#L95
+https://github.com/eclipse-vertx/vertx-auth/blob/master/vertx-auth-otp/src/main/java/io/vertx/ext/auth/otp/OtpKey.java#L62-L78
+Paulo Lopes
+7:23 AM
+Objects.requireNotNull(...)
+Paulo Lopes
+7:32 AM
+image::sunset.jpg[]
+https://docs.asciidoctor.org/asciidoc/latest/macros/images/
+Paulo Lopes
+7:36 AM
+https://code.visualstudio.com/
+Paulo Lopes
+7:37 AM
+https://ubuntu.com/download/server
+Paulo Lopes
+7:39 AM
+https://code.visualstudio.com/docs/remote/tunnels
+oko-bzar-tmb
