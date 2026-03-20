@@ -1,0 +1,28 @@
+Basic Metrics to learn:
+
+ROA - Return on Assets
+ROE - Return on Equity
+ROIC - Return on invested capital
+ROCE - Return on capital employed
+
+If the above four are greater than 15% is a great company. That doesn't mean the balance sheet isn't leveraged. So, next, look at the debt-to-equity ratio.
+
+DE - Debt equity 
+<1 is great and < 1.5 is good 
+
+Next - look at what you pay to own it?
+
+PE - Price to earnings
+Depends on the sector: <25 in tech is great. 
+<10 for utility is great.
+
+Why should you look at the PE? You can buy a great company for a bad price. You want to avoid that; that is why Buffett says, when others are fearful, you must be greedy.
+
+How would you assess the intrinsic value? You need to know how much money they are making now and the projected cash flow.
+
+FCF - Free Cash Flow (Historical or current performance.)
+DCF - Discounted Cash Flow (Future potential.)
+
+
+
+https://www.youtube.com/watch?v=7vCILujfQaU&t=191s
