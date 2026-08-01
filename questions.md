@@ -13,6 +13,7 @@
 
 ### Privacy/security questions
 PII in the feed: The payload includes three PII fields: first_name, last_name, and email. Do these need to be encrypted at rest in our database? If the answer is yes, then we need to come up with an encryption/decryption-as-a-service model. That also means we will need a secret store to safely store keys. 
+For the local services I build, I will secure them using Keycloak and OAuth 2.0 authorization code flow. 
 
 ### Assumptions (unless you tell me otherwise)
 * One JSON file ↔ one client (party).
