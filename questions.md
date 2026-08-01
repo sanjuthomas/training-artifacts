@@ -2,8 +2,9 @@
 * What is the purpose of this feed? Is this an OLTP/transactional or OLAP/reporting use case? 
 * Who is the sending party? Is this feed coming from a custodian (e.g. Apex) or from another wealth manager/partner platform?
 * Does the master data already exist on our side? Can I assume that the client (party), sub-accounts, and advisor already exist in Firm’s CRM / account master, and that this feed is enriching or updating holdings rather than creating those entities from scratch?
+* We've client_id, first_name, and last_name on the feed, so we can create the party if they don't exist in our DB. In that case, I assume the source of truth is not our system and client_id is issued by the second party, and we just keep a few party attributes. Same for accounts, too.
 * Is this a full (master) snapshot or a delta feed? It looks like a full snapshot; there’s no holding lifecycle (adds/updates/deletes), but I’d like to confirm. That choice drives upsert and deletion semantics.
-* What’s the intended use of market_value and price in the feed? By the time we persist the data, markets may have moved. If this is for EOD/EOW reporting or a point-in-time snapshot, that makes sense, but I want to confirm the business purpose, so we model and freshness expectations correctly. Should we treat these as as-of last_updated, and store that timestamp with the snapshot?
+* What’s the intended use of market_value and price in the feed? By the time we persist the data, markets may have moved. If this is for EOD reporting or a point-in-time snapshot, that makes sense, but I want to confirm the business purpose, so we model and freshness expectations correctly.
 
 ### Technical questions
 * What does the webhook payload look like exactly? Is it only a URL, or does it also include auth material, a checksum, timestamp, etc.?
