@@ -11,6 +11,9 @@
 * Is there an SLO for processing latency? From webhook receipt to data being queryable, how long is acceptable?
 * What’s the holdings cardinality? We’ve discussed ~1,000 clients and ~2 accounts each—can you share average and max holdings per account?
 
+### Privacy/security questions
+PII in the feed: The payload includes three PII fields—first_name, last_name, and email. Do these need to be encrypted at rest in our database? If the answer is yes, then we need to come up with an encryption/decryption-as-a-service model. That also means we will need a secret store to safely store keys. 
+
 ### Assumptions (unless you tell me otherwise)
 * One JSON file ↔ one client (party).
 * Webhook will be invoked only after the file is completely written into the file system/object store.
