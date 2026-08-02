@@ -9,12 +9,12 @@
 
 ## Technical questions
 
-| # | Question | Sanju's Assumption | Bob's comment |
+| # | Question | Sanju's Solution | Bob's comment |
 |---|---|---|---|
-| 1 | What does the webhook payload look like exactly? Is it only a URL, or does it also include auth material, a checksum, timestamp, etc.? | My solution: The webhook is more than a URL. `POST /webhooks/v1/feeds/client-portfolio` requires a **Bearer JWT**. The JSON body includes `event_id`, `event_type` (`feed.arrived`), `occurred_at`, `source`, and a `feed` object with `absolute_path` (landing zip path), `checksum` (hex), and `checksum_algorithm` (`SHA-256`). Auth is in the header, not the body. ingest-api recomputes the checksum against the file at `absolute_path` before writing `ops.webhook_event`; mismatch or missing file rejects without persisting. | TODO |
+| 1 | What does the webhook payload look like exactly? Is it only a URL, or does it also include auth material, a checksum, timestamp, etc.? | The webhook is more than a URL. `POST /webhooks/v1/feeds/client-portfolio` requires a **Bearer JWT**. The JSON body includes `event_id`, `event_type` (`feed.arrived`), `occurred_at`, `source`, and a `feed` object with `absolute_path` (landing zip path), `checksum` (hex), and `checksum_algorithm` (`SHA-256`). Auth is in the header, not the body. ingest-api recomputes the checksum against the file at `absolute_path` before writing `ops.webhook_event`; mismatch or missing file rejects without persisting. | TODO |
 | 2 | How do we verify file integrity? | The producer (harness) computes a **SHA-256** hex digest of the landing zip and sends it in the webhook as `feed.checksum` with `feed.checksum_algorithm = "SHA-256"`. ingest-api reads the file at `absolute_path`, recomputes the digest with the declared algorithm, and compares. **Match** → persist to `ops.webhook_event` (`ACCEPTED`) and return `202`. **Mismatch** → `422 rejected`, no DB write. **Missing/unreadable file** → `400 rejected`. Unsupported algorithms fail validation (`400`) with the accepted list. Integrity is checked **before** any ops persistence. | TODO |
-| 3 | Is there an SLO for processing latency? | Yes. For feeds of **1,000 clients or fewer**, end-to-end processing (feed arrived → data available for query) must complete in **under 30 seconds for 99% of occasions**, measured over a **rolling 30-day window**. | TODO |
-| 4 | What is the holdings cardinality? | At least **1** holding per account/client context in a valid feed file; worst case up to **1,000** holdings. | TODO |
+| 3 | Is there an SLO for processing latency? | Yes. I created one: feeds of **1,000 clients or fewer**, end-to-end processing (feed arrived → data available for query) must complete in **under 30 seconds for 99% of occasions**, measured over a **rolling 30-day window**. | TODO |
+| 4 | What is the holdings cardinality? | I came up with this number: At least **1** holding per account/client context in a valid feed file; worst case up to **1,000** holdings. | TODO |
 
 ## Privacy/Security Questions
 
