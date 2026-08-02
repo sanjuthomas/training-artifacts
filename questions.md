@@ -6,6 +6,7 @@
 | 2 | The feed includes `client_id`, `first_name`, and `last_name`. In production, clients, accounts, and advisors would typically be onboarded into Firm first, with custodian client IDs and account numbers mapped to Firm IDs. For this interview solution, should we create missing entities from the feed instead? | For this interview solution, treat the feed as the source of truth and **create** client, account, holding, security, and advisor rows when they are not already in the database, rather than requiring a separate onboarding or id-mapping step. | TODO |
 | 3 | Is this a full (master) snapshot or a delta feed? It appears to be a full snapshot. | Treat it as the custodian’s **master opening-balance feed** (full snapshot), not a delta. | TODO |
 | 4 | What is the intended use of `market_value` and `price` in the feed? | Because this is treated as an opening-balance feed, `price` is assumed to be the **prior trading day’s closing price**. Store `market_value` and `price` as provided so we can calculate portfolio change over time. | TODO |
+| 5 | What does account status mean ("status": "ACTIVE")? Are there other statuses? | I am not coding for this, but I understand there could be other statuses and you may want to handle those | TODO |
 
 ## Technical questions
 
