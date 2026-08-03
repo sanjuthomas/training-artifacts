@@ -34,6 +34,12 @@
 | 1 | The feed payload includes PII fields (`first_name`, `last_name`, and `email`). Should we handle those with care? | Yes. In production, those fields should be **encrypted at rest**, with controlled access to encryption/decryption keys. For this interview solution, I am **not** implementing field-level encryption, but I am calling out that these PII fields were identified. | TODO |
 | 2 | What are the service-level security requirements? | No formal requirements were given. For the local services in this solution, access is secured with **Keycloak** and **OAuth 2.0** (Authorization Code + PKCE for UIs; JWT bearer tokens for APIs). | TODO |
 
+## Observability
+
+| # | Question | Sanju's Solution | Bob's comment |
+|---|---|---|---|
+| 1 | How will we observe the feed pipeline end-to-end (ingest → stage → Kafka → ETL → query)? | Plan to provide **360° observability** using an **observability mesh** so traces, metrics, and logs can be correlated across services without bolting a one-off stack onto each app. See [Observability Mesh](http://observabilitymesh.com/). For this interview solution, that mesh is **not** wired in yet; ops-console / actuator health cover local visibility only. | TODO |
+
 ### Assumptions (unless you tell me otherwise)
 * One JSON file ↔ one client (party).
 * Webhook will be invoked only after the file is completely written into the file system/object store.
