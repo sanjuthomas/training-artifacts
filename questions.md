@@ -38,7 +38,7 @@
 
 | # | Question | Sanju's Solution | Bob's comment |
 |---|---|---|---|
-| 1 | How will we observe the feed pipeline end-to-end (ingest → stage → Kafka → ETL → query)? | Plan to provide **360° observability** using [Observability Mesh](http://observabilitymesh.com/) so traces, metrics, and logs can be correlated across services without bolting a one-off stack onto each app.  | TODO |
+| 1 | How will we observe the feed pipeline end-to-end (ingest → stage → Kafka → ETL → query)? | Plan to provide **360° observability** using [Observability Mesh](http://observabilitymesh.com/), so traces, metrics, and logs can be correlated across services.  | TODO |
 
 ### Assumptions (unless you tell me otherwise)
 * One JSON file ↔ one client (party).
